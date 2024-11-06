@@ -50,7 +50,13 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+   
   }
+  .hright li:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(37, 36, 36)  ;
+  }
+
   .hright ul li{
     text-decoration: none;
     list-style: none;
@@ -58,6 +64,8 @@ body{
     font-weight: 400;
     display: flex;
     flex-direction: row;
+    transition: 1s;
+    box-shadow: 0px 0px;
     
   }
   .hright ul li img{
@@ -162,6 +170,8 @@ body{
 .card{
   width: 250px;
   height: 400px;
+  transition: 1s;
+  opacity: 0.7;
   
 }
 .card img{
@@ -226,9 +236,9 @@ body{
   padding: 25px;
 }
 .bigBox{
-  height: 80vh;
+  height: 90vh;
   width: 100%;
-  background-color: rgba(199, 98, 54, 0.388);
+  background-color: rgba(239, 23, 23, 0.727);
 }
 .bigBox .about{
   display: flex;
@@ -243,6 +253,10 @@ body{
 
 .bigBox .about p{
 line-height: 0.2rem;
+}
+.bigBox .btn img {
+  left: 10px;
+  top: 0px;
 }
 .circles{
   width: 100%;
@@ -352,5 +366,21 @@ line-height: 0.2rem;
 .lastLine{
   align-items: center;
 
-  margin-left: 250px;
+  margin-left: 300px;
+}
+.soc i{
+  margin-left: 10px;
+  font-size: 25px;
+}
+.tab hr{
+  background-color: rgb(255, 115, 0);
+  color: rgb(255, 136, 0);
+  height: 1px;
+  border: none;
+  margin-right: 12px;
+}
+.btn ,.card:hover{
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.1,1.1);
 }
